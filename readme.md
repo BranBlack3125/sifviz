@@ -38,4 +38,4 @@ Below is a sketch outlining our basic website layout. A locator map displaying s
 
 Below is a closer (rotated) view of our interface sketch:
 
-!{}(img/layout.jpg)
+![](img/layout.jpg)
