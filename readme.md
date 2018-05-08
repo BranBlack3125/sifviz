@@ -32,6 +32,6 @@ This image shows chlorophyll fluorescence over the Corn Belt in the central US i
 
 **Interface Sketch**
 
-![](img/layout.jpg)
-
 Below is a sketch outlining our basic website layout. A locator map displaying selectable SIF monitoring sites is displayed in the upper left corner. A time slider sits directly below, with an output graph describing the selected monitoring site's SIF value linked to the SIF data currently being displayed in the viewer placed directly beneath. Under the monitoring site graph and time slider, a viewer describes two optional outputs (selectable by toggling the Animation and Heat Map buttons). An example of the type of visualization to be viewable with the Animation button may be seen [here](https://earth.nullschool.net/#current/wind/surface/level/orthographic=-142.85,43.42,3000). The heat map display option will be of a conventional formatting. Finally, a readout of the monitoring site SIF data will be set in the lower right quadrant of the page. These data are linked temporally to the imagery currently displayed in the viewer, representing basic statistics associated with the monitoring site.
+
+![](img/layout.jpg)
