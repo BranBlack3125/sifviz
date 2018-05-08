@@ -29,3 +29,5 @@ This image shows chlorophyll fluorescence over the Corn Belt in the central US i
 [Geoplotlib](https://www.researchgate.net/publication/305983877_Geoplotlib_a_Python_Toolbox_for_Visualizing_Geographical_Data): A Python toolbox that include the capablity to produce heatmaps
 
 [myheatmap](https://myheatmap.com/): example Mapbox geovisualization aimed at heatmapping
+
+**Interface Sketch**
