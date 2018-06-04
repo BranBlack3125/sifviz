@@ -1,0 +1,139 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  font-family: Verdana;
+  padding-top: 54px;
+  background-color: #082f26;
+  class="text-center"
+}
+
+h1 {
+    color: #841a7c;
+    text-align: center;
+}
+
+h2 {
+    color: #1ac62f;
+    text-align: center;
+}
+
+h3 {
+    color: #BA6C29;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    text-shadow: #893230 0.1em 0.1em 0.2em
+}
+
+h4 {
+    color: #e6912b;
+    text-align: center;
+}
+
+p {
+    color: #87ed3a;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+/*Buttons*/
+
+
+/* Green */
+.btn-info {
+    border-color: #317135;
+    color: green;
+}
+
+.btn-info:hover {
+    background-color: #26a31a;
+    color: #eea83f;
+}
+
+.btn-info {
+    border: 2px solid #572569;
+    background-color: #e6ce31;
+    color: #a0472f;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Green */
+
+.btn-lg {
+    border: 2px solid #572569;
+    background-color: #841a7c;
+    color: #e6ce31;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.btn-info-lg {
+    border-color: #317135;
+    color: #a338c5;
+}
+
+.btn-lg:hover {
+    background-color: #26b619;
+    color: #eee955;
+}
+
+/*Center images*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Responsive scale for images*/
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*!* Fading animation *!*/
+/*.fade {*/
+    /*-webkit-animation-name: fade;*/
+    /*-webkit-animation-duration: 1.5s;*/
+    /*animation-name: fade;*/
+    /*animation-duration: 1.5s;*/
+/*}*/
+
+/*@-webkit-keyframes fade {*/
+    /*from {opacity: .4}*/
+    /*to {opacity: 1}*/
+/*}*/
+
+/*@keyframes fade {*/
+    /*from {opacity: .4}*/
+    /*to {opacity: 1}*/
+/*}*/
+
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
