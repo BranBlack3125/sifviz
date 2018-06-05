@@ -5,28 +5,28 @@
  */
 
 body {
-  font-family: Verdana;
-  padding-top: 54px;
-  background-color: #082f26;
-  class="text-center"
+  font-family: abel;
+  padding-top: 75px;
+  background-color: #222629;
+  class:  "text-center"
 }
 
 h1 {
-    color: #841a7c;
+    color: #f2fdfb;
     text-align: center;
 }
 
 h2 {
-    color: #1ac62f;
+    color: #61892F;
     text-align: center;
 }
 
 h3 {
-    color: #BA6C29;
+    color: #f2fdfb;
     text-align: center;
-    font-family: fantasy;
+    font-family: Nunito Sans;
     font-size: 30px;
-    text-shadow: #893230 0.1em 0.1em 0.2em
+    <!-- text-shadow: #893230 0.1em 0.1em 0.2em -->
 }
 
 h4 {
@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-    color: #87ed3a;
+    color: #f2fdfb;
     text-align: center;
 }
 
@@ -50,12 +50,12 @@ p {
 
 /* Green */
 .btn-info {
-    border-color: #317135;
-    color: green;
+    border-color: #2f3337;
+    color: #474B4F;
 }
 
 .btn-info:hover {
-    background-color: #26a31a;
+    background-color: #6b6e70;
     color: #eea83f;
 }
 
@@ -87,7 +87,7 @@ p {
 }
 
 .btn-lg:hover {
-    background-color: #26b619;
+    background-color: #6b6e70;
     color: #eee955;
 }
 

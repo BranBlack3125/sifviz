@@ -1,62 +1,42 @@
-# [Start Bootstrap - Modern Business](https://startbootstrap.com/template-overviews/modern-business/)
+# Visualizing Solar-Induced Chlorophyll Fluorescence (SIF) by Timeframe and Region
 
-[Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+**Group Members:** Lila Leatherman and Bran Black
 
-## Preview
+**Motivation:** Both Lila and Bran have an interest in developing tools capable of expressing change in remotely sensed data over time. The problem of displaying shifts in SIF responses over time is a good representation of both the type of input data and change detection techniques Lila and Bran plan to work with in future research, making this project an excellent case study both students may adapt for future uses.
 
-[![Modern Business Preview](https://startbootstrap.com/assets/img/templates/modern-business.jpg)](https://blackrockdigital.github.io/startbootstrap-modern-business/)
+**Project Description:** We intend to create a tool capable of displaying SIF data by user-selected region over a specified time period. Special focus will be given to providing a means for users to detect changes within SIF over time, such as seasonal shifts in fluorescence or vegetative responses to drought. The shift in SIF values over the prescribed time period will be displayed as a heat map, either as a static map output or as an animation over time. Ideally, we will include various general zonal statistics of the selected area over the designated timeframe (mean, variance, average time series over the location, etc.). This analysis-heavy multi-view will be centered on using different methods of visualizing change over space and time. 
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-modern-business/)**
+**Data:**
 
-## Status
+Solar-induced chlorophyll fluorescence (SIF) is a relatively new remote sensing index. In contrast to traditional vegetation indices (NDVI, EVI), SIF is connected to the physiology of plant production, rather than the greenness of vegetation. SIF is also more sensitive to intra-annual variation in production related to heat and drought stress. SIF is correlated with the light use efficiency of photosynthesis (LUE; Guanter et al.2014) and with absorbed photosynthetically activeradiation (APAR; Rossini et al. 2010). Thus, SIF provides an ideal proxy for gross primary production (GPP) of an ecosystem.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-modern-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-modern-business.svg)](https://www.npmjs.com/package/startbootstrap-modern-business)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-modern-business.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-modern-business)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business?type=dev)
+SIF is measured by the NASA GOME-2 satellite at 0.5 decimal degree spatial resolution. SIF data products cover the globe, and are provided at daily and monthly temporal resolution, from 2002-present. SIF data are uploaded shortly after they are observed, and are available from [NASA](https://avdc.gsfc.nasa.gov/pub/data/satellite/MetOp/GOME_F/). All of our data will be sourced from this site. For this project, we will use monthly data to minimize processing. A focus of our data visualization will be quantifying and visualizing the impacts of a 2012 drought on North America.
 
-## Download and Installation
+For more info about SIF, check out this article from [NASA's Jet Propulsion Lab](https://www.jpl.nasa.gov/news/news.php?release=2014-097).
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/modern-business/)
-* Install via npm: `npm i startbootstrap-modern-business`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-modern-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-modern-business)
+![SIF_from_NASA](https://imagecache.jpl.nasa.gov/images/640x350/earth20140331-640-640x350.jpg)
 
-## Usage
+This image shows chlorophyll fluorescence over the Corn Belt in the central US in July, averaged from 2007-2011.
 
-### Basic Usage
+**Interface Design:**
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+[d3heatmap](https://blog.rstudio.com/2015/06/24/d3heatmap/): a geovizualization package capable of similar to the heatmap and heatmap.2 packages, but with expanded user interaction (zooming, highlighting, etc.).
 
-### Advanced Usage
+[Map-with-Latitude-Longitude](http://bl.ocks.org/lokesh005/7640d9b562bf59b561d6) : simpler user interface where data selected by points alone
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+[contour plot](https://bl.ocks.org/mbostock/4241134): contour plot of data that may be useful in displaying difference in SIF data over time
 
-## Bugs and Issues
+[Geoplotlib](https://www.researchgate.net/publication/305983877_Geoplotlib_a_Python_Toolbox_for_Visualizing_Geographical_Data): A Python toolbox that include the capablity to produce heatmaps
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/).
+[myheatmap](https://myheatmap.com/): example Mapbox geovisualization aimed at heatmapping
 
-## Custom Builds
+**Interface Sketch**
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+Below is a sketch outlining our basic website layout. A locator map displaying selectable SIF monitoring sites is displayed in the upper left corner. A time slider sits directly below, with an output graph describing the selected monitoring site's SIF value linked to the SIF data currently being displayed in the viewer placed directly beneath. Under the monitoring site graph and time slider, a viewer describes two optional outputs (selectable by toggling the Animation and Heat Map buttons). An example of the type of visualization to be viewable with the Animation button may be seen [here](https://earth.nullschool.net/#current/wind/surface/level/orthographic=-142.85,43.42,3000). The heat map display option will be of a conventional formatting. Finally, a readout of the monitoring site SIF data will be set in the lower right quadrant of the page. These data are linked temporally to the imagery currently displayed in the viewer, representing basic statistics associated with the monitoring site.
 
-## About
+![](img/layout1_90.jpg)
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Below is a closer (rotated) view of our interface sketch:
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+![](img/layout1.jpg)
