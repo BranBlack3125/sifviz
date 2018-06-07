@@ -23,7 +23,7 @@ h2 {
 
 h3 {
     color: #f2fdfb;
-    text-align: center;
+    text-align: center
     font-family: Nunito Sans;
     font-size: 30px;
     <!-- text-shadow: #893230 0.1em 0.1em 0.2em -->
@@ -43,6 +43,16 @@ p {
   body {
     padding-top: 56px;
   }
+}
+
+.mx-auto {
+    font-size: 24px
+}
+
+/* Nav bar */
+
+.nav-item {
+    font-size: 20px;
 }
 
 /*Buttons*/
@@ -136,4 +146,14 @@ p {
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+/* ICONS */
+
+.fa-github {
+    color: #f2fdfb
+}
+
+.fa-facebook-square {
+    color: #f2fdfb
 }

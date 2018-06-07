@@ -26,62 +26,95 @@
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark static-top">
+
+    <!-- OSU Geoviz and Cartography-->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" id="osu" href="http://geoviz.ceoas.oregonstate.edu" target="_blank">
+          <span><img src="img/logo-long.png" style="width:200px" class="d-inline-block align-top image-responsive"></span>
+        </a>
+      </li>
+
+    </ul>
+
+
+    <!-- title -->
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"><strong>SIF VIZ:</strong> Visualizing Solar-Induced Chlorophyll Fluorescence (SIF)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+
+    <!-- nav bar links -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="services.html">Services</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="about.html">About</a>-->
+        <!--</li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="map.html">Map</a>
+        </li>
+        <!--<li class="nav-item dropdown">-->
+        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+        <!--Portfolio-->
+        <!--</a>-->
+        <!--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">-->
+        <!--<a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>-->
+        <!--<a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>-->
+        <!--<a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>-->
+        <!--<a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>-->
+        <!--<a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="nav-item dropdown">-->
+        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+        <!--Blog-->
+        <!--</a>-->
+        <!--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">-->
+        <!--<a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>-->
+        <!--<a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>-->
+        <!--<a class="dropdown-item" href="blog-post.html">Blog Post</a>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="nav-item dropdown">-->
+          <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+            <!--Other Pages-->
+          <!--</a>-->
+          <!--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">-->
+            <!--<a class="dropdown-item" href="full-width.html">Full Width Page</a>-->
+            <!--<a class="dropdown-item" href="sidebar.html">Sidebar Page</a>-->
+            <!--<a class="dropdown-item" href="faq.html">FAQ</a>-->
+            <!--<a class="dropdown-item" href="404.html">404</a>-->
+            <!--<a class="dropdown-item" href="pricing.html">Pricing Table</a>-->
+          <!--</div>-->
+        <!--</li>-->
+
+        <!-- social -->
+
+        <li class="nav-item">
+          <a href="https://github.com/lleather/sifviz" target="_blank"><i class="fab fa-github fa-fw fa-2x"></i></a>
+        </li>
+        <li class = "nav-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//branblack3125.github.io/sifviz/map.html" target="_blank"><i class="fab fa-facebook-square fa-fw fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
 
     <!-- Page Content -->
     <div class="container">
@@ -107,8 +140,10 @@
           <h2>Overview</h2>
             <p><b>Motivation:</b> Both Lila and Bran have an interest in developing tools capable of expressing change in remotely sensed data over time. The problem of displaying shifts in SIF responses over time is a good representation of both the type of input data and change detection techniques Lila and Bran plan to work with in future research, making this project an excellent case study both students may adapt for future uses.</p>
             <p><b>Project Description:</b> We have created a tool capable of displaying global SIF data for the seasonal greenup of the Northern and Southern hemispheres. A VectorField visualization has been applied to portray the flow of chlorophyll concentration between seasons.</p>
-            <p><b>Data:</b> Solar-induced chlorophyll fluorescence (SIF) is a relatively new remote sensing index. In contrast to traditional vegetation indices (NDVI, EVI), SIF is connected to the physiology of plant production, rather than the greenness of vegetation. SIF is also more sensitive to intra-annual variation in production related to heat and drought stress. SIF is correlated with the light use efficiency of photosynthesis (LUE; Guanter et al.2014) and with absorbed photosynthetically activeradiation (APAR; Rossini et al. 2010). Thus, SIF provides an ideal proxy for gross primary production (GPP) of an ecosystem. SIF is measured by the NASA GOME-2 satellite at 0.5 decimal degree spatial resolution. SIF data products cover the globe, and are provided at daily and monthly temporal resolution, from 2002-present. SIF data are uploaded shortly after they are observed, and are available from NASA. All of our data will be sourced from this site. For this project, we will use monthly data to minimize processing. A focus of our data visualization will be quantifying and visualizing the impacts of a 2012 drought on North America.</p>
+          <p><b>Data:</b> Solar-induced chlorophyll fluorescence (SIF) is a relatively new remote sensing index. In contrast to traditional vegetation indices (NDVI, EVI), SIF is connected to the physiology of plant production, rather than the greenness of vegetation. SIF is also more sensitive to intra-annual variation in production related to heat and drought stress. SIF is correlated with the light use efficiency of photosynthesis (LUE; Guanter et al.2014) and with absorbed photosynthetically active radiation (APAR; Rossini et al. 2010). Thus, SIF provides an ideal proxy for gross primary production (GPP) of an ecosystem. SIF is measured by the NASA GOME-2 satellite at 0.5 decimal degree spatial resolution. SIF data products cover the globe, and are provided at daily and monthly temporal resolution, from 2002-present.</p>
+          <p> This project uses <a href="https://avdc.gsfc.nasa.gov/pub/data/satellite/MetOp/GOME_F/v27/MetOp-A/level3/">monthly SIF data</a> from the GOME-2 satellite.</p>
             <p>For more info about SIF, check out this article from <a href="https://www.jpl.nasa.gov/news/news.php?release=2014-097">NASA's Jet Propulsion Lab.</a></p>
+          <p> For more infor about the GOME-2 satellite, check out this article from the <a href = "https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/GOME2/index.html">European Space Agency.</a></p>
         </div>
       </div>
       <!-- /.row -->
