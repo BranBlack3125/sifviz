@@ -50,7 +50,7 @@ body {
 
 body {
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-weight: 100;
 }
 
@@ -64,13 +64,13 @@ h2 {
 }
 
 h6 {
-    color: #10707f;
+    color: #f2fdfb;
 }
 
-ul a {
+/*ul a {
     font-size: 16px;
     color: white;
-}
+}*/
 
 /* social tab buttons */
 
