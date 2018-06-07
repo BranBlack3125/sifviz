@@ -16,6 +16,12 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Fjalla+One|Nunito+Sans|Raleway+Dots" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/1530-seedling.ico" type="image/x-icon">
+
   </head>
 
   <body>
@@ -81,108 +87,128 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">About
-        <small>Subheading</small>
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">About</li>
-      </ol>
+      <h1 class="mt-4 mb-3">Visualizing Solar-Induced Chlorophyll Fluorescence (SIF)</h1>
+      <h2 class="mt-4 mb-3">Lila Leatherman and Bran Black</h2>
+      <!--<ol class="breadcrumb">-->
+        <!--<li class="breadcrumb-item">-->
+          <!--<a href="index.html">Home</a>-->
+        <!--</li>-->
+        <!--<li class="breadcrumb-item active">1a</li>-->
+      <!--</ol>-->
 
       <!-- Intro Content -->
       <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+        <div class="col-lg-12">
+          <img src="img/sif_nasa.jpg" class="image" style = "width:100%" onclick="location.href = 'https://github.com/lleather/sifviz';">
+            <p>This image shows chlorophyll fluorescence over the Corn Belt in the central US in July, averaged from 2007-2011.</p>
         </div>
-        <div class="col-lg-6">
-          <h2>About Modern Business</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <!-- Team Members -->
-      <h2>Our Team</h2>
-
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <img class="card-img-top" src="http://placehold.it/750x450" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Team Member</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#">name@example.com</a>
-            </div>
-          </div>
+        <div class="col-lg-12">
+            <hr>
+          <h2>Overview</h2>
+            <p><b>Motivation:</b> Both Lila and Bran have an interest in developing tools capable of expressing change in remotely sensed data over time. The problem of displaying shifts in SIF responses over time is a good representation of both the type of input data and change detection techniques Lila and Bran plan to work with in future research, making this project an excellent case study both students may adapt for future uses.</p>
+            <p><b>Project Description:</b> We have created a tool capable of displaying global SIF data for the seasonal greenup of the Northern and Southern hemispheres. A VectorField visualization has been applied to portray the flow of chlorophyll concentration between seasons.</p>
+            <p><b>Data:</b> Solar-induced chlorophyll fluorescence (SIF) is a relatively new remote sensing index. In contrast to traditional vegetation indices (NDVI, EVI), SIF is connected to the physiology of plant production, rather than the greenness of vegetation. SIF is also more sensitive to intra-annual variation in production related to heat and drought stress. SIF is correlated with the light use efficiency of photosynthesis (LUE; Guanter et al.2014) and with absorbed photosynthetically activeradiation (APAR; Rossini et al. 2010). Thus, SIF provides an ideal proxy for gross primary production (GPP) of an ecosystem. SIF is measured by the NASA GOME-2 satellite at 0.5 decimal degree spatial resolution. SIF data products cover the globe, and are provided at daily and monthly temporal resolution, from 2002-present. SIF data are uploaded shortly after they are observed, and are available from NASA. All of our data will be sourced from this site. For this project, we will use monthly data to minimize processing. A focus of our data visualization will be quantifying and visualizing the impacts of a 2012 drought on North America.</p>
+            <p>For more info about SIF, check out this article from <a href="https://www.jpl.nasa.gov/news/news.php?release=2014-097">NASA's Jet Propulsion Lab.</a></p>
         </div>
       </div>
       <!-- /.row -->
+    <hr>
+    <img src="img/earthsun.jpg" class="image" style = "width:100%" onclick="location.href = 'https://github.com/lleather/sifviz';">
 
-      <!-- Our Customers -->
-      <h2>Our Customers</h2>
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+    <div class="row">
+        <div class="col-lg-12">
+            <hr>
+            <h2>Interface Design</h2>
+            <p><a href="https://ihcantabria.github.io/Leaflet.CanvasLayer.Field/">Vector Field Animation:</a> to visualize "transfer of energy."</p>
+            <p><a href="https://startbootstrap.com/template-overviews/modern-business/">Bootstrap template:</a> basic template landing page was built from</p>
+            <p><a href="https://fonts.google.com/">Fonts:</a> fonts were accessed through Google font families</p>
+            <p><a href="https://d3js.org/">d3:</a> d3.js reference for map charts</p>
+            <p><a href="https://fontawesome.com/">Icons:</a> Font Awesome library</p>
         </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-        <div class="col-lg-2 col-sm-4 mb-4">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </div>
-      </div>
-      <!-- /.row -->
-
     </div>
+
+    <hr>
+    <hr>
+    <!-- /.row -->
+
+
+      <!--&lt;!&ndash; Team Members &ndash;&gt;-->
+      <!--<h2>Our Team</h2>-->
+
+      <!--<div class="row">-->
+        <!--<div class="col-lg-4 mb-4">-->
+          <!--<div class="card h-100 text-center">-->
+            <!--<img class="card-img-top" src="http://placehold.it/750x450" alt="">-->
+            <!--<div class="card-body">-->
+              <!--<h4 class="card-title">Team Member</h4>-->
+              <!--<h6 class="card-subtitle mb-2 text-muted">Position</h6>-->
+              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>-->
+            <!--</div>-->
+            <!--<div class="card-footer">-->
+              <!--<a href="#">name@example.com</a>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-lg-4 mb-4">-->
+          <!--<div class="card h-100 text-center">-->
+            <!--<img class="card-img-top" src="http://placehold.it/750x450" alt="">-->
+            <!--<div class="card-body">-->
+              <!--<h4 class="card-title">Team Member</h4>-->
+              <!--<h6 class="card-subtitle mb-2 text-muted">Position</h6>-->
+              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>-->
+            <!--</div>-->
+            <!--<div class="card-footer">-->
+              <!--<a href="#">name@example.com</a>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-lg-4 mb-4">-->
+          <!--<div class="card h-100 text-center">-->
+            <!--<img class="card-img-top" src="http://placehold.it/750x450" alt="">-->
+            <!--<div class="card-body">-->
+              <!--<h4 class="card-title">Team Member</h4>-->
+              <!--<h6 class="card-subtitle mb-2 text-muted">Position</h6>-->
+              <!--<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>-->
+            <!--</div>-->
+            <!--<div class="card-footer">-->
+              <!--<a href="#">name@example.com</a>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; /.row &ndash;&gt;-->
+
+      <!--&lt;!&ndash; Our Customers &ndash;&gt;-->
+      <!--<h2>Our Customers</h2>-->
+      <!--<div class="row">-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-lg-2 col-sm-4 mb-4">-->
+          <!--<img class="img-fluid" src="http://placehold.it/500x300" alt="">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; /.row &ndash;&gt;-->
+
+    <!--</div>-->
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-success">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; SIFVIZ 2018</p>
       </div>
       <!-- /.container -->
     </footer>
