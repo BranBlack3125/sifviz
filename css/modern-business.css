@@ -13,30 +13,37 @@ body {
 }
 
 h1 {
-    color: #f2fdfb;
+    color: #f1ffc5;
     text-align: center;
 }
 
 h2 {
-    color: #61892F;
+    color: #0b5322;
     text-align: center;
+    text-shadow: 0px 1px 1px #128537
 }
 
 h3 {
-    color: #f2fdfb;
+    color: #dd973a;
     text-align: center
     font-family: Nunito Sans;
-    font-size: 30px;
-    <!-- text-shadow: #893230 0.1em 0.1em 0.2em -->
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #78161b
 }
 
 h4 {
-    color: #e6912b;
+    color: #cdeeb6;
     text-align: center;
 }
 
+h5 {
+    color: #deffbc;
+    text-align: center;
+    text-shadow: 2px 2px 2px #094c18
+}
+
 p {
-    color: #f2fdfb;
+    color: #f1ffc5;
     text-align: center;
 }
 
@@ -58,7 +65,17 @@ p {
 .nav-item {
     font-size: 20px;
 }
+.navbar-nav {
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+}
 
+.navbar-nav>li {
+    display: inline-block;
+    padding-left:10px;
+    padding-right:10px;
+}
 /*Buttons*/
 
 /* image links */
@@ -70,21 +87,21 @@ p {
 
 /* Green */
 .btn-info {
-    border-color: #2f3337;
-    color: #474B4F;
+    border-color: #08380e;
+    color: #085710;
 }
 
 .btn-info:hover {
-    background-color: #6b6e70;
+    background-color: #098222;
     color: #eea83f;
 }
 
 .btn-info {
-    border: 2px solid #572569;
-    background-color: #e6ce31;
-    color: #a0472f;
+    border: 2px solid #09a523;
+    background-color: #62cc41;
+    color: #600e6d;
     padding: 14px 28px;
-    font-size: 16px;
+    font-size: 23px;
     cursor: pointer;
     text-align: center;
 }
@@ -92,23 +109,23 @@ p {
 /* Green */
 
 .btn-lg {
-    border: 2px solid #572569;
-    background-color: #841a7c;
-    color: #e6ce31;
+    border: 2px solid #f3d023;
+    background-color: #f3f026;
+    color: #098220;
     padding: 14px 28px;
-    font-size: 16px;
+    font-size: 23px;
     cursor: pointer;
 }
 
 
 .btn-info-lg {
-    border-color: #317135;
-    color: #a338c5;
+    border-color: #094b1b;
+    color: #09ce23;
 }
 
 .btn-lg:hover {
-    background-color: #6b6e70;
-    color: #eee955;
+    background-color: #600e6d;
+    color: #dd973a;
 }
 
 /*Center images*/
@@ -166,4 +183,12 @@ p {
 
 .fa-facebook-square {
     color: #f2fdfb
+}
+
+hr {
+    clear: both;
+    color: #222629;
+    background-color: #222629;
+    height: 1px;
+    border-width: 0;
 }
