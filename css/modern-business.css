@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: abel;
+  font-family: "Trebuchet MS";
   padding: 0;
   margin: 0;
   background-color: #222629;
@@ -20,6 +20,7 @@ h1 {
 h2 {
     color: #0b5322;
     text-align: center;
+    font-size: 38px;
     text-shadow: 0px 1px 1px #128537
 }
 
@@ -37,14 +38,17 @@ h4 {
 }
 
 h5 {
-    color: #deffbc;
+    color: #abca94;
     text-align: center;
-    text-shadow: 2px 2px 2px #094c18
+    text-shadow: 2px 2px 2px #094c18;
+    font-size: 22px;
 }
 
 p {
     color: #f1ffc5;
     text-align: center;
+    font-family: Tahoma;
+    font-size: 17px;
 }
 
 @media (min-width: 992px) {
@@ -92,8 +96,9 @@ p {
 }
 
 .btn-info:hover {
-    background-color: #098222;
+    background-color: #600e6d;
     color: #eea83f;
+    border-color: #3d1b78;
 }
 
 .btn-info {
@@ -109,8 +114,8 @@ p {
 /* Green */
 
 .btn-lg {
-    border: 2px solid #f3d023;
-    background-color: #f3f026;
+    border: 2px solid #92ce46;
+    background-color: #d1f322;
     color: #098220;
     padding: 14px 28px;
     font-size: 23px;
